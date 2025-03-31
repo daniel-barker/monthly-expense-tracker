@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,27 +16,27 @@
             --warning: #ffce54;
             --danger: #ed5565;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background-color: var(--primary);
             color: white;
@@ -43,12 +44,12 @@
             margin-bottom: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         header h1 {
             font-size: 2.2rem;
             text-align: center;
         }
-        
+
         .back-link {
             display: inline-block;
             margin-bottom: 20px;
@@ -56,11 +57,11 @@
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         .back-link:hover {
             text-decoration: underline;
         }
-        
+
         .month-picker {
             display: flex;
             justify-content: space-between;
@@ -71,7 +72,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         .month-picker button {
             background-color: var(--primary);
             color: white;
@@ -80,19 +81,19 @@
             padding: 10px 15px;
             cursor: pointer;
         }
-        
+
         .month-picker h2 {
             margin: 0;
             font-size: 1.5rem;
         }
-        
+
         .dashboard {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
         }
-        
+
         .stat-card {
             background-color: white;
             border-radius: 8px;
@@ -100,26 +101,26 @@
             padding: 20px;
             text-align: center;
         }
-        
+
         .stat-card h3 {
             margin-bottom: 10px;
             color: var(--secondary);
         }
-        
+
         .stat-card .amount {
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 10px;
         }
-        
+
         .stat-card .amount.positive {
             color: var(--success);
         }
-        
+
         .stat-card .amount.negative {
             color: var(--danger);
         }
-        
+
         .budget-section {
             background-color: white;
             border-radius: 8px;
@@ -127,48 +128,48 @@
             padding: 20px;
             margin-bottom: 30px;
         }
-        
+
         .budget-section h2 {
             margin-bottom: 20px;
             color: var(--secondary);
             border-bottom: 2px solid var(--accent);
             padding-bottom: 10px;
         }
-        
+
         .budget-table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
-        
-        .budget-table th, 
+
+        .budget-table th,
         .budget-table td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-        
+
         .budget-table th {
             background-color: var(--secondary);
             color: white;
         }
-        
+
         .budget-table tr:hover {
             background-color: #f5f5f5;
         }
-        
+
         .budget-table input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        
+
         .budget-table .total-row {
             font-weight: bold;
             background-color: #f9f9f9;
         }
-        
+
         .add-row-btn {
             display: block;
             background-color: transparent;
@@ -182,19 +183,19 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         }
-        
+
         .add-row-btn:hover {
             background-color: #f5f5f5;
             color: var(--primary);
             border-color: var(--primary);
         }
-        
+
         .btn-group {
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -204,53 +205,53 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        
+
         .btn-primary {
             background-color: var(--primary);
             color: white;
         }
-        
+
         .btn-primary:hover {
             background-color: var(--accent);
         }
-        
+
         .btn-secondary {
             background-color: #f1f1f1;
             color: var(--dark);
         }
-        
+
         .btn-secondary:hover {
             background-color: #ddd;
         }
-        
+
         .form-group {
             margin-bottom: 15px;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
             font-weight: 500;
         }
-        
+
         .goals-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-        
+
         .goal-card {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 15px;
         }
-        
+
         .goal-card h4 {
             margin-bottom: 10px;
             color: var(--secondary);
         }
-        
+
         .progress-bar {
             height: 10px;
             background-color: #f1f1f1;
@@ -258,20 +259,20 @@
             margin: 10px 0;
             overflow: hidden;
         }
-        
+
         .progress {
             height: 100%;
             background-color: var(--success);
             border-radius: 5px;
         }
-        
+
         .expense-tracker {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
-        
+
         .expense-list {
             background-color: white;
             border-radius: 8px;
@@ -280,32 +281,32 @@
             max-height: 300px;
             overflow-y: auto;
         }
-        
+
         .expense-item {
             padding: 10px;
             border-bottom: 1px solid #eee;
             display: flex;
             justify-content: space-between;
         }
-        
+
         .expense-item:last-child {
             border-bottom: none;
         }
-        
+
         .chart-container {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
-        
+
         footer {
             text-align: center;
             padding: 20px 0;
             color: #888;
             font-size: 0.9rem;
         }
-        
+
         @media (max-width: 768px) {
             .chart-container {
                 grid-column: 1 / -1;
@@ -313,44 +314,45 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Monthly Budget Planner</h1>
         </div>
     </header>
-    
+
     <div class="container">
         <a href="index.html" class="back-link">← Back to Dashboard</a>
-        
+
         <div class="month-picker">
             <button id="prev-month">Previous Month</button>
             <h2 id="current-month">March 2025</h2>
             <button id="next-month">Next Month</button>
         </div>
-        
+
         <div class="dashboard">
             <div class="stat-card">
                 <h3>Total Income</h3>
                 <div class="amount positive" id="total-income">$0.00</div>
             </div>
-            
+
             <div class="stat-card">
                 <h3>Total Expenses</h3>
                 <div class="amount negative" id="total-expenses">$0.00</div>
             </div>
-            
+
             <div class="stat-card">
                 <h3>Net Cash Flow</h3>
                 <div class="amount" id="net-cashflow">$0.00</div>
             </div>
-            
+
             <div class="stat-card">
                 <h3>Savings Rate</h3>
                 <div class="amount" id="savings-rate">0%</div>
             </div>
         </div>
-        
+
         <div class="budget-section">
             <h2>Income</h2>
             <table class="budget-table" id="income-table">
@@ -389,7 +391,7 @@
             </table>
             <button class="add-row-btn" id="add-income-row">+ Add Income Source</button>
         </div>
-        
+
         <div class="budget-section">
             <h2>Essential Expenses</h2>
             <table class="budget-table" id="essentials-table">
@@ -435,7 +437,7 @@
             </table>
             <button class="add-row-btn" id="add-essential-row">+ Add Essential Expense</button>
         </div>
-        
+
         <div class="budget-section">
             <h2>Discretionary Expenses</h2>
             <table class="budget-table" id="discretionary-table">
@@ -481,7 +483,7 @@
             </table>
             <button class="add-row-btn" id="add-discretionary-row">+ Add Discretionary Expense</button>
         </div>
-        
+
         <div class="budget-section">
             <h2>Savings & Investments</h2>
             <table class="budget-table" id="savings-table">
@@ -520,7 +522,7 @@
             </table>
             <button class="add-row-btn" id="add-savings-row">+ Add Savings Category</button>
         </div>
-        
+
         <div class="budget-section">
             <h2>Financial Goals Progress</h2>
             <div class="goals-grid" id="goals-container">
@@ -557,12 +559,20 @@
                 <button class="add-row-btn" id="add-goal">+ Add Financial Goal</button>
             </div>
         </div>
-        
+        <div class="budget-section">
+            <h2>Notes for This Month</h2>
+            <textarea id="current-month-notes" rows="4"
+                style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"
+                placeholder="Track important events, changes, or observations for this month..."></textarea>
+        </div>
+
         <div class="budget-section">
             <h2>Notes for Next Month</h2>
-            <textarea id="budget-notes" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" placeholder="What worked well, what needs adjustment, upcoming large expenses..."></textarea>
+            <textarea id="budget-notes" rows="4"
+                style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"
+                placeholder="What worked well, what needs adjustment, upcoming large expenses..."></textarea>
         </div>
-        
+
         <div class="budget-section">
             <h2>Expense Tracker</h2>
             <div class="expense-tracker">
@@ -583,23 +593,25 @@
             <div class="form-group" style="margin-top: 20px;">
                 <h3>Add New Expense</h3>
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 10px; margin-top: 10px;">
-                    <input type="date" id="expense-date" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="date" id="expense-date"
+                        style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
                     <select id="expense-category" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
                         <option value="" disabled selected>Select Category</option>
                         <!-- Categories will be dynamically added based on budget categories -->
                     </select>
-                    <input type="number" id="expense-amount" placeholder="Amount" min="0" step="0.01" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="number" id="expense-amount" placeholder="Amount" min="0" step="0.01"
+                        style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
                     <button class="btn btn-primary" id="add-expense-btn">Add</button>
                 </div>
             </div>
         </div>
-        
+
         <div class="btn-group">
             <button class="btn btn-secondary" id="reset-budget">Reset Budget</button>
             <button class="btn btn-primary" id="save-budget">Save Budget</button>
         </div>
     </div>
-    
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Life Organizer. Your personal productivity system.</p>
@@ -607,77 +619,77 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Set current month
             const today = new Date();
             updateMonthDisplay(today);
-            
+
             // Add event listeners for all interactive elements
             addEventListeners();
-            
+
             // Initial calculations
             calculateTotals();
             updateDashboard();
             updateGoalsProgress();
-            
+
             // Load budget if available
             loadBudget();
         });
-        
+
         function addEventListeners() {
             // Month navigation
-            document.getElementById('prev-month').addEventListener('click', function() {
+            document.getElementById('prev-month').addEventListener('click', function () {
                 navigateMonth(-1);
             });
-            
-            document.getElementById('next-month').addEventListener('click', function() {
+
+            document.getElementById('next-month').addEventListener('click', function () {
                 navigateMonth(1);
             });
-            
+
             // Add row buttons
-            document.getElementById('add-income-row').addEventListener('click', function() {
+            document.getElementById('add-income-row').addEventListener('click', function () {
                 addIncomeRow();
             });
-            
-            document.getElementById('add-essential-row').addEventListener('click', function() {
+
+            document.getElementById('add-essential-row').addEventListener('click', function () {
                 addEssentialRow();
             });
-            
-            document.getElementById('add-discretionary-row').addEventListener('click', function() {
+
+            document.getElementById('add-discretionary-row').addEventListener('click', function () {
                 addDiscretionaryRow();
             });
-            
-            document.getElementById('add-savings-row').addEventListener('click', function() {
+
+            document.getElementById('add-savings-row').addEventListener('click', function () {
                 addSavingsRow();
             });
-            
-            document.getElementById('add-goal').addEventListener('click', function() {
+
+            document.getElementById('add-goal').addEventListener('click', function () {
                 addGoalCard();
             });
-            
+
             // Save and reset buttons
-            document.getElementById('save-budget').addEventListener('click', function() {
+            document.getElementById('save-budget').addEventListener('click', function () {
                 saveBudget();
             });
-            
-            document.getElementById('reset-budget').addEventListener('click', function() {
+
+            document.getElementById('reset-budget').addEventListener('click', function () {
                 if (confirm('Are you sure you want to reset the budget? All unsaved data will be lost.')) {
                     resetBudget();
                 }
             });
-            
+
             // Add expense button
-            document.getElementById('add-expense-btn').addEventListener('click', function() {
+            document.getElementById('add-expense-btn').addEventListener('click', function () {
                 addExpense();
             });
-            
+
             // Add input change listeners for calculations
             addCalculationListeners();
-            
+
             // Add delete button listeners
             addDeleteRowListeners();
         }
-        
+
         function updateMonthDisplay(date) {
             const options = { year: 'numeric', month: 'long' };
             document.getElementById('current-month').textContent = date.toLocaleDateString('en-US', options);
@@ -685,28 +697,28 @@
             const monthStr = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}`;
             document.getElementById('current-month').setAttribute('data-month', monthStr);
         }
-        
+
         function navigateMonth(offset) {
             const currentMonthStr = document.getElementById('current-month').getAttribute('data-month');
             const [year, month] = currentMonthStr.split('-').map(num => parseInt(num));
-            
+
             // Create a date for the first day of the current month
             const currentDate = new Date(year, month - 1, 1);
-            
+
             // Add/subtract months
             currentDate.setMonth(currentDate.getMonth() + offset);
-            
+
             // Update the display
             updateMonthDisplay(currentDate);
-            
+
             // Load budget for the new month
             loadBudget();
         }
-        
+
         function addIncomeRow() {
             const tbody = document.querySelector('#income-table tbody');
             const totalRow = tbody.querySelector('.total-row');
-            
+
             const newRow = document.createElement('tr');
             newRow.innerHTML = `
                 <td><input type="text" class="income-source" placeholder="Income Source"></td>
@@ -715,21 +727,21 @@
                 <td class="income-difference">$0.00</td>
                 <td><button class="btn-secondary delete-row">X</button></td>
             `;
-            
+
             // Add the new row before the total row
             tbody.insertBefore(newRow, totalRow);
-            
+
             // Add event listeners to the new inputs
             addRowCalculationListeners(newRow);
-            
+
             // Add delete button listener
             addDeleteButtonListener(newRow.querySelector('.delete-row'));
         }
-        
+
         function addEssentialRow() {
             const tbody = document.querySelector('#essentials-table tbody');
             const totalRow = tbody.querySelector('.total-row');
-            
+
             const newRow = document.createElement('tr');
             newRow.innerHTML = `
                 <td><input type="text" class="expense-category" placeholder="Expense Category"></td>
@@ -738,17 +750,17 @@
                 <td class="expense-difference">$0.00</td>
                 <td><button class="btn-secondary delete-row">X</button></td>
             `;
-            
+
             tbody.insertBefore(newRow, totalRow);
             addRowCalculationListeners(newRow);
             addDeleteButtonListener(newRow.querySelector('.delete-row'));
             updateExpenseCategoryDropdown();
         }
-        
+
         function addDiscretionaryRow() {
             const tbody = document.querySelector('#discretionary-table tbody');
             const totalRow = tbody.querySelector('.total-row');
-            
+
             const newRow = document.createElement('tr');
             newRow.innerHTML = `
                 <td><input type="text" class="expense-category" placeholder="Expense Category"></td>
@@ -757,17 +769,17 @@
                 <td class="expense-difference">$0.00</td>
                 <td><button class="btn-secondary delete-row">X</button></td>
             `;
-            
+
             tbody.insertBefore(newRow, totalRow);
             addRowCalculationListeners(newRow);
             addDeleteButtonListener(newRow.querySelector('.delete-row'));
             updateExpenseCategoryDropdown();
         }
-        
+
         function addSavingsRow() {
             const tbody = document.querySelector('#savings-table tbody');
             const totalRow = tbody.querySelector('.total-row');
-            
+
             const newRow = document.createElement('tr');
             newRow.innerHTML = `
                 <td><input type="text" class="savings-category" placeholder="Savings Category"></td>
@@ -776,16 +788,16 @@
                 <td class="savings-difference">$0.00</td>
                 <td><button class="btn-secondary delete-row">X</button></td>
             `;
-            
+
             tbody.insertBefore(newRow, totalRow);
             addRowCalculationListeners(newRow);
             addDeleteButtonListener(newRow.querySelector('.delete-row'));
         }
-        
+
         function addGoalCard() {
             const goalsContainer = document.getElementById('goals-container');
             const addButton = document.getElementById('add-goal');
-            
+
             const newGoal = document.createElement('div');
             newGoal.className = 'goal-card';
             newGoal.innerHTML = `
@@ -804,99 +816,99 @@
                 <div class="goal-percentage">0% Complete</div>
                 <button class="btn-secondary delete-row" style="margin-top: 10px;">Remove</button>
             `;
-            
+
             // Insert before the add button
             goalsContainer.insertBefore(newGoal, addButton);
-            
+
             // Add event listeners
             const targetInput = newGoal.querySelector('.goal-target');
             const currentInput = newGoal.querySelector('.goal-current');
-            
+
             targetInput.addEventListener('input', updateGoalsProgress);
             currentInput.addEventListener('input', updateGoalsProgress);
-            
+
             // Add delete button listener
             const deleteBtn = newGoal.querySelector('.delete-row');
-            deleteBtn.addEventListener('click', function() {
+            deleteBtn.addEventListener('click', function () {
                 if (confirm('Are you sure you want to remove this goal?')) {
                     newGoal.remove();
                     updateGoalsProgress();
                 }
             });
         }
-        
+
         function addCalculationListeners() {
             // Income table
             document.querySelectorAll('#income-table input').forEach(input => {
-                input.addEventListener('input', function() {
+                input.addEventListener('input', function () {
                     calculateIncomeDifference(this.closest('tr'));
                     calculateIncomeTotals();
                     updateDashboard();
                 });
             });
-            
+
             // Essential expenses table
             document.querySelectorAll('#essentials-table input').forEach(input => {
-                input.addEventListener('input', function() {
+                input.addEventListener('input', function () {
                     calculateExpenseDifference(this.closest('tr'));
                     calculateEssentialsTotals();
                     updateDashboard();
                 });
             });
-            
+
             // Discretionary expenses table
             document.querySelectorAll('#discretionary-table input').forEach(input => {
-                input.addEventListener('input', function() {
+                input.addEventListener('input', function () {
                     calculateExpenseDifference(this.closest('tr'));
                     calculateDiscretionaryTotals();
                     updateDashboard();
                 });
             });
-            
+
             // Savings table
             document.querySelectorAll('#savings-table input').forEach(input => {
-                input.addEventListener('input', function() {
+                input.addEventListener('input', function () {
                     calculateSavingsDifference(this.closest('tr'));
                     calculateSavingsTotals();
                     updateDashboard();
                 });
             });
-            
+
             // Goals
             document.querySelectorAll('.goal-target, .goal-current').forEach(input => {
                 input.addEventListener('input', updateGoalsProgress);
             });
         }
-        
+
         function addRowCalculationListeners(row) {
             // For income rows
             const incomeExpected = row.querySelector('.income-expected');
             const incomeActual = row.querySelector('.income-actual');
-            
+
             if (incomeExpected && incomeActual) {
-                incomeExpected.addEventListener('input', function() {
+                incomeExpected.addEventListener('input', function () {
                     calculateIncomeDifference(row);
                     calculateIncomeTotals();
                     updateDashboard();
                 });
-                
-                incomeActual.addEventListener('input', function() {
+
+                incomeActual.addEventListener('input', function () {
                     calculateIncomeDifference(row);
                     calculateIncomeTotals();
                     updateDashboard();
                 });
-                
+
                 return;
             }
-            
+
             // For expense rows (both essential and discretionary)
             const expenseBudgeted = row.querySelector('.expense-budgeted');
             const expenseActual = row.querySelector('.expense-actual');
-            
+
             if (expenseBudgeted && expenseActual) {
-                expenseBudgeted.addEventListener('input', function() {
+                expenseBudgeted.addEventListener('input', function () {
                     calculateExpenseDifference(row);
-                    
+
                     // Check which table this belongs to
                     const table = row.closest('table');
                     if (table.id === 'essentials-table') {
@@ -904,13 +916,13 @@
                     } else if (table.id === 'discretionary-table') {
                         calculateDiscretionaryTotals();
                     }
-                    
+
                     updateDashboard();
                 });
-                
-                expenseActual.addEventListener('input', function() {
+
+                expenseActual.addEventListener('input', function () {
                     calculateExpenseDifference(row);
-                    
+
                     // Check which table this belongs to
                     const table = row.closest('table');
                     if (table.id === 'essentials-table') {
@@ -918,44 +930,44 @@
                     } else if (table.id === 'discretionary-table') {
                         calculateDiscretionaryTotals();
                     }
-                    
+
                     updateDashboard();
                 });
-                
+
                 return;
             }
-            
+
             // For savings rows
             const savingsBudgeted = row.querySelector('.savings-budgeted');
             const savingsActual = row.querySelector('.savings-actual');
-            
+
             if (savingsBudgeted && savingsActual) {
-                savingsBudgeted.addEventListener('input', function() {
+                savingsBudgeted.addEventListener('input', function () {
                     calculateSavingsDifference(row);
                     calculateSavingsTotals();
                     updateDashboard();
                 });
-                
-                savingsActual.addEventListener('input', function() {
+
+                savingsActual.addEventListener('input', function () {
                     calculateSavingsDifference(row);
                     calculateSavingsTotals();
                     updateDashboard();
                 });
             }
         }
-        
+
         function addDeleteRowListeners() {
             document.querySelectorAll('.delete-row').forEach(button => {
                 addDeleteButtonListener(button);
             });
         }
-        
+
         function addDeleteButtonListener(button) {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const row = this.closest('tr');
                 if (row && confirm('Are you sure you want to delete this row?')) {
                     row.remove();
-                    
+
                     // Recalculate totals based on the table
                     const table = this.closest('table');
                     if (table) {
@@ -968,27 +980,27 @@
                         } else if (table.id === 'savings-table') {
                             calculateSavingsTotals();
                         }
-                        
+
                         updateDashboard();
                         updateExpenseCategoryDropdown();
                     }
                 }
             });
         }
-        
+
         function calculateIncomeDifference(row) {
             const expectedInput = row.querySelector('.income-expected');
             const actualInput = row.querySelector('.income-actual');
             const differenceCell = row.querySelector('.income-difference');
-            
+
             if (expectedInput && actualInput && differenceCell) {
                 const expected = parseFloat(expectedInput.value) || 0;
                 const actual = parseFloat(actualInput.value) || 0;
                 const difference = actual - expected;
-                
+
                 differenceCell.textContent = formatCurrency(difference);
                 differenceCell.classList.remove('positive', 'negative');
-                
+
                 if (difference > 0) {
                     differenceCell.classList.add('positive');
                 } else if (difference < 0) {
@@ -996,20 +1008,20 @@
                 }
             }
         }
-        
+
         function calculateExpenseDifference(row) {
             const budgetedInput = row.querySelector('.expense-budgeted');
             const actualInput = row.querySelector('.expense-actual');
             const differenceCell = row.querySelector('.expense-difference');
-            
+
             if (budgetedInput && actualInput && differenceCell) {
                 const budgeted = parseFloat(budgetedInput.value) || 0;
                 const actual = parseFloat(actualInput.value) || 0;
                 const difference = budgeted - actual;
-                
+
                 differenceCell.textContent = formatCurrency(difference);
                 differenceCell.classList.remove('positive', 'negative');
-                
+
                 if (difference > 0) {
                     differenceCell.classList.add('positive');
                 } else if (difference < 0) {
@@ -1017,20 +1029,20 @@
                 }
             }
         }
-        
+
         function calculateSavingsDifference(row) {
             const budgetedInput = row.querySelector('.savings-budgeted');
             const actualInput = row.querySelector('.savings-actual');
             const differenceCell = row.querySelector('.savings-difference');
-            
+
             if (budgetedInput && actualInput && differenceCell) {
                 const budgeted = parseFloat(budgetedInput.value) || 0;
                 const actual = parseFloat(actualInput.value) || 0;
                 const difference = actual - budgeted;
-                
+
                 differenceCell.textContent = formatCurrency(difference);
                 differenceCell.classList.remove('positive', 'negative');
-                
+
                 if (difference > 0) {
                     differenceCell.classList.add('positive');
                 } else if (difference < 0) {
@@ -1038,153 +1050,153 @@
                 }
             }
         }
-        
+
         function calculateIncomeTotals() {
             let expectedTotal = 0;
             let actualTotal = 0;
-            
+
             document.querySelectorAll('#income-table tr:not(.total-row)').forEach(row => {
                 const expectedInput = row.querySelector('.income-expected');
                 const actualInput = row.querySelector('.income-actual');
-                
+
                 if (expectedInput && actualInput) {
                     expectedTotal += parseFloat(expectedInput.value) || 0;
                     actualTotal += parseFloat(actualInput.value) || 0;
                 }
             });
-            
+
             const differenceTotal = actualTotal - expectedTotal;
-            
+
             document.getElementById('income-expected-total').textContent = formatCurrency(expectedTotal);
             document.getElementById('income-actual-total').textContent = formatCurrency(actualTotal);
             document.getElementById('income-difference-total').textContent = formatCurrency(differenceTotal);
-            
+
             document.getElementById('income-difference-total').classList.remove('positive', 'negative');
             if (differenceTotal > 0) {
                 document.getElementById('income-difference-total').classList.add('positive');
             } else if (differenceTotal < 0) {
                 document.getElementById('income-difference-total').classList.add('negative');
             }
-            
+
             return { expected: expectedTotal, actual: actualTotal };
         }
-        
+
         function calculateEssentialsTotals() {
             let budgetedTotal = 0;
             let actualTotal = 0;
-            
+
             document.querySelectorAll('#essentials-table tr:not(.total-row)').forEach(row => {
                 const budgetedInput = row.querySelector('.expense-budgeted');
                 const actualInput = row.querySelector('.expense-actual');
-                
+
                 if (budgetedInput && actualInput) {
                     budgetedTotal += parseFloat(budgetedInput.value) || 0;
                     actualTotal += parseFloat(actualInput.value) || 0;
                 }
             });
-            
+
             const differenceTotal = budgetedTotal - actualTotal;
-            
+
             document.getElementById('essentials-budgeted-total').textContent = formatCurrency(budgetedTotal);
             document.getElementById('essentials-actual-total').textContent = formatCurrency(actualTotal);
             document.getElementById('essentials-difference-total').textContent = formatCurrency(differenceTotal);
-            
+
             document.getElementById('essentials-difference-total').classList.remove('positive', 'negative');
             if (differenceTotal > 0) {
                 document.getElementById('essentials-difference-total').classList.add('positive');
             } else if (differenceTotal < 0) {
                 document.getElementById('essentials-difference-total').classList.add('negative');
             }
-            
+
             return { budgeted: budgetedTotal, actual: actualTotal };
         }
-        
+
         function calculateDiscretionaryTotals() {
             let budgetedTotal = 0;
             let actualTotal = 0;
-            
+
             document.querySelectorAll('#discretionary-table tr:not(.total-row)').forEach(row => {
                 const budgetedInput = row.querySelector('.expense-budgeted');
                 const actualInput = row.querySelector('.expense-actual');
-                
+
                 if (budgetedInput && actualInput) {
                     budgetedTotal += parseFloat(budgetedInput.value) || 0;
                     actualTotal += parseFloat(actualInput.value) || 0;
                 }
             });
-            
+
             const differenceTotal = budgetedTotal - actualTotal;
-            
+
             document.getElementById('discretionary-budgeted-total').textContent = formatCurrency(budgetedTotal);
             document.getElementById('discretionary-actual-total').textContent = formatCurrency(actualTotal);
             document.getElementById('discretionary-difference-total').textContent = formatCurrency(differenceTotal);
-            
+
             document.getElementById('discretionary-difference-total').classList.remove('positive', 'negative');
             if (differenceTotal > 0) {
                 document.getElementById('discretionary-difference-total').classList.add('positive');
             } else if (differenceTotal < 0) {
                 document.getElementById('discretionary-difference-total').classList.add('negative');
             }
-            
+
             return { budgeted: budgetedTotal, actual: actualTotal };
         }
-        
+
         function calculateSavingsTotals() {
             let budgetedTotal = 0;
             let actualTotal = 0;
-            
+
             document.querySelectorAll('#savings-table tr:not(.total-row)').forEach(row => {
                 const budgetedInput = row.querySelector('.savings-budgeted');
                 const actualInput = row.querySelector('.savings-actual');
-                
+
                 if (budgetedInput && actualInput) {
                     budgetedTotal += parseFloat(budgetedInput.value) || 0;
                     actualTotal += parseFloat(actualInput.value) || 0;
                 }
             });
-            
+
             const differenceTotal = actualTotal - budgetedTotal;
-            
+
             document.getElementById('savings-budgeted-total').textContent = formatCurrency(budgetedTotal);
             document.getElementById('savings-actual-total').textContent = formatCurrency(actualTotal);
             document.getElementById('savings-difference-total').textContent = formatCurrency(differenceTotal);
-            
+
             document.getElementById('savings-difference-total').classList.remove('positive', 'negative');
             if (differenceTotal > 0) {
                 document.getElementById('savings-difference-total').classList.add('positive');
             } else if (differenceTotal < 0) {
                 document.getElementById('savings-difference-total').classList.add('negative');
             }
-            
+
             return { budgeted: budgetedTotal, actual: actualTotal };
         }
-        
+
         function calculateTotals() {
             calculateIncomeTotals();
             calculateEssentialsTotals();
             calculateDiscretionaryTotals();
             calculateSavingsTotals();
         }
-        
+
         function updateDashboard() {
             // Get totals from all sections
             const income = calculateIncomeTotals();
             const essentials = calculateEssentialsTotals();
             const discretionary = calculateDiscretionaryTotals();
             const savings = calculateSavingsTotals();
-            
+
             // Calculate dashboard metrics
             const totalIncome = income.actual;
             const totalExpenses = essentials.actual + discretionary.actual;
             const netCashFlow = totalIncome - totalExpenses;
             const savingsRate = totalIncome > 0 ? ((savings.actual / totalIncome) * 100) : 0;
-            
+
             // Update dashboard
             document.getElementById('total-income').textContent = formatCurrency(totalIncome);
             document.getElementById('total-expenses').textContent = formatCurrency(totalExpenses);
             document.getElementById('net-cashflow').textContent = formatCurrency(netCashFlow);
             document.getElementById('savings-rate').textContent = formatPercentage(savingsRate);
-            
+
             // Set color classes
             document.getElementById('net-cashflow').className = 'amount';
             if (netCashFlow > 0) {
@@ -1193,7 +1205,7 @@
                 document.getElementById('net-cashflow').classList.add('negative');
             }
         }
-        
+
         function updateGoalsProgress() {
             document.querySelectorAll('.goal-card').forEach(card => {
                 if (card.id !== 'add-goal') {
@@ -1201,14 +1213,14 @@
                     const currentInput = card.querySelector('.goal-current');
                     const progressBar = card.querySelector('.progress');
                     const percentageText = card.querySelector('.goal-percentage');
-                    
+
                     if (targetInput && currentInput && progressBar && percentageText) {
                         const target = parseFloat(targetInput.value) || 0;
                         const current = parseFloat(currentInput.value) || 0;
-                        
+
                         // Calculate percentage (cap at 100%)
                         let percentage = target > 0 ? Math.min(100, (current / target) * 100) : 0;
-                        
+
                         // Update progress bar and text
                         progressBar.style.width = `${percentage}%`;
                         percentageText.textContent = `${Math.round(percentage)}% Complete`;
@@ -1216,21 +1228,21 @@
                 }
             });
         }
-        
+
         function updateExpenseCategoryDropdown() {
             const categoryDropdown = document.getElementById('expense-category');
             categoryDropdown.innerHTML = '<option value="" disabled selected>Select Category</option>';
-            
+
             // Get all defined expense categories from essential and discretionary tables
             const categories = [];
-            
+
             document.querySelectorAll('#essentials-table .expense-category, #discretionary-table .expense-category').forEach(input => {
                 const category = input.value.trim();
                 if (category && !categories.includes(category)) {
                     categories.push(category);
                 }
             });
-            
+
             // Add categories to dropdown
             categories.sort().forEach(category => {
                 const option = document.createElement('option');
@@ -1239,93 +1251,93 @@
                 categoryDropdown.appendChild(option);
             });
         }
-        
+
         function addExpense() {
             const date = document.getElementById('expense-date').value;
             const category = document.getElementById('expense-category').value;
             const amount = parseFloat(document.getElementById('expense-amount').value) || 0;
-            
+
             if (!date) {
                 alert('Please select a date.');
                 return;
             }
-            
+
             if (!category) {
                 alert('Please select a category.');
                 return;
             }
-            
+
             if (amount <= 0) {
                 alert('Please enter a valid amount.');
                 return;
             }
-            
+
             // Get current month
             const currentMonth = document.getElementById('current-month').getAttribute('data-month');
-            
+
             // Get existing expenses or create empty array
             const allExpenses = JSON.parse(localStorage.getItem('budgetExpenses') || '{}');
             if (!allExpenses[currentMonth]) {
                 allExpenses[currentMonth] = [];
             }
-            
+
             // Add new expense
             allExpenses[currentMonth].push({
                 date: date,
                 category: category,
                 amount: amount
             });
-            
+
             // Save to localStorage
             localStorage.setItem('budgetExpenses', JSON.stringify(allExpenses));
-            
+
             // Clear inputs
             document.getElementById('expense-date').value = '';
             document.getElementById('expense-category').value = '';
             document.getElementById('expense-amount').value = '';
-            
+
             // Refresh expense list
             loadExpenses();
-            
+
             alert('Expense added successfully!');
         }
-        
+
         function loadExpenses() {
             const currentMonth = document.getElementById('current-month').getAttribute('data-month');
             const allExpenses = JSON.parse(localStorage.getItem('budgetExpenses') || '{}');
             const expenses = allExpenses[currentMonth] || [];
-            
+
             const expensesContainer = document.getElementById('expenses-list-container');
             expensesContainer.innerHTML = '';
-            
+
             if (expenses.length === 0) {
                 expensesContainer.innerHTML = '<div class="expense-item"><span>No expenses logged yet</span></div>';
                 return;
             }
-            
+
             // Sort expenses by date (newest first)
             expenses.sort((a, b) => new Date(b.date) - new Date(a.date));
-            
+
             // Display expenses
             expenses.forEach(expense => {
                 const expenseItem = document.createElement('div');
                 expenseItem.className = 'expense-item';
-                
+
                 const dateObj = new Date(expense.date);
                 const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-                
+
                 expenseItem.innerHTML = `
                     <span>${formattedDate} - ${expense.category}</span>
                     <span>${formatCurrency(expense.amount)}</span>
                 `;
-                
+
                 expensesContainer.appendChild(expenseItem);
             });
-            
+
             // Update expense chart
             updateExpenseChart(expenses);
         }
-        
+
         function updateExpenseChart(expenses) {
             // Group expenses by category
             const categories = {};
@@ -1335,73 +1347,73 @@
                 }
                 categories[expense.category] += expense.amount;
             });
-            
+
             // Convert to array for chart
             const chartData = Object.entries(categories).map(([category, amount]) => ({ category, amount }));
-            
+
             // Sort by amount (largest first)
             chartData.sort((a, b) => b.amount - a.amount);
-            
+
             // Create chart (placeholder implementation)
             const chartContainer = document.getElementById('expenses-chart');
             chartContainer.innerHTML = '';
-            
+
             // Simple bar chart implementation
             chartData.forEach((item, index) => {
                 const barContainer = document.createElement('div');
                 barContainer.style.display = 'flex';
                 barContainer.style.alignItems = 'center';
                 barContainer.style.marginBottom = '10px';
-                
+
                 const label = document.createElement('div');
                 label.style.width = '120px';
                 label.style.paddingRight = '10px';
                 label.style.textAlign = 'right';
                 label.textContent = item.category;
-                
+
                 const barWrapper = document.createElement('div');
                 barWrapper.style.flex = '1';
                 barWrapper.style.height = '25px';
                 barWrapper.style.display = 'flex';
                 barWrapper.style.alignItems = 'center';
-                
+
                 const bar = document.createElement('div');
-                
+
                 // Get max amount for scaling
                 const maxAmount = Math.max(...chartData.map(d => d.amount));
                 const percentage = (item.amount / maxAmount) * 100;
-                
+
                 bar.style.width = `${percentage}%`;
                 bar.style.backgroundColor = getChartColor(index);
                 bar.style.height = '100%';
                 bar.style.borderRadius = '4px';
-                
+
                 const amount = document.createElement('div');
                 amount.style.marginLeft = '10px';
                 amount.textContent = formatCurrency(item.amount);
-                
+
                 barWrapper.appendChild(bar);
                 barContainer.appendChild(label);
                 barContainer.appendChild(barWrapper);
                 barContainer.appendChild(amount);
-                
+
                 chartContainer.appendChild(barContainer);
             });
         }
-        
+
         function getChartColor(index) {
             const colors = [
-                '#4a6fa5', '#166088', '#4fc1e9', '#68cd86', '#ffce54', 
+                '#4a6fa5', '#166088', '#4fc1e9', '#68cd86', '#ffce54',
                 '#ed5565', '#ac92ec', '#ec87c0', '#d770ad', '#f6bb42'
             ];
-            
+
             return colors[index % colors.length];
         }
-        
+
         function saveBudget() {
             // Get current month
             const currentMonth = document.getElementById('current-month').getAttribute('data-month');
-            
+
             // Collect all budget data
             const budgetData = {
                 income: collectIncomeData(),
@@ -1409,25 +1421,26 @@
                 discretionaryExpenses: collectDiscretionaryExpensesData(),
                 savings: collectSavingsData(),
                 goals: collectGoalsData(),
-                notes: document.getElementById('budget-notes').value
+                currentMonthNotes: document.getElementById('current-month-notes').value,
+                nextMonthNotes: document.getElementById('budget-notes').value
             };
-            
+
             // Save to localStorage
             const allBudgets = JSON.parse(localStorage.getItem('monthlyBudgets') || '{}');
             allBudgets[currentMonth] = budgetData;
             localStorage.setItem('monthlyBudgets', JSON.stringify(allBudgets));
-            
+
             alert('Budget saved successfully!');
         }
-        
+
         function loadBudget() {
             // Get current month
             const currentMonth = document.getElementById('current-month').getAttribute('data-month');
-            
+
             // Get saved data from localStorage
             const allBudgets = JSON.parse(localStorage.getItem('monthlyBudgets') || '{}');
             const budgetData = allBudgets[currentMonth];
-            
+
             if (!budgetData) {
                 // No data for this month, reset the form
                 resetBudget();
@@ -1435,89 +1448,91 @@
                 loadExpenses();
                 return;
             }
-            
+
             // Load income data
             loadIncomeData(budgetData.income);
-            
+
             // Load expense data
             loadEssentialExpensesData(budgetData.essentialExpenses);
             loadDiscretionaryExpensesData(budgetData.discretionaryExpenses);
-            
+
             // Load savings data
             loadSavingsData(budgetData.savings);
-            
+
             // Load goals data
             loadGoalsData(budgetData.goals);
-            
+
             // Load notes
-            document.getElementById('budget-notes').value = budgetData.notes || '';
-            
+            document.getElementById('current-month-notes').value = budgetData.currentMonthNotes || '';
+            document.getElementById('budget-notes').value = budgetData.nextMonthNotes || '';
+
             // Load expenses
             loadExpenses();
-            
+
             // Update expense category dropdown
             updateExpenseCategoryDropdown();
-            
+
             // Update calculations
             calculateTotals();
             updateDashboard();
             updateGoalsProgress();
         }
-        
+
         function resetBudget() {
             // Reset income rows
             resetTableRows('#income-table', 2, addIncomeRow);
-            
+
             // Reset essential expenses rows
             resetTableRows('#essentials-table', 3, addEssentialRow);
-            
+
             // Reset discretionary expenses rows
             resetTableRows('#discretionary-table', 3, addDiscretionaryRow);
-            
+
             // Reset savings rows
             resetTableRows('#savings-table', 2, addSavingsRow);
-            
+
             // Reset goals
             resetGoals();
-            
+
             // Reset notes
+            document.getElementById('current-month-notes').value = '';
             document.getElementById('budget-notes').value = '';
-            
+
             // Update calculations
             calculateTotals();
             updateDashboard();
             updateGoalsProgress();
-            
+
             // Update expense category dropdown
             updateExpenseCategoryDropdown();
         }
-        
+
         function resetTableRows(tableSelector, defaultRowCount, addRowFunction) {
             const tbody = document.querySelector(`${tableSelector} tbody`);
             const totalRow = tbody.querySelector('.total-row');
-            
+
             // Remove all rows except total row
             tbody.querySelectorAll('tr:not(.total-row)').forEach(row => row.remove());
-            
+
             // Add default rows
             for (let i = 0; i < defaultRowCount; i++) {
                 addRowFunction();
             }
         }
-        
+
         function resetGoals() {
             const goalsContainer = document.getElementById('goals-container');
             const addButton = document.getElementById('add-goal');
-            
+
             // Remove all goal cards except the add button
             goalsContainer.querySelectorAll('.goal-card').forEach(card => card.remove());
-            
+
             // Add default goals
             const defaultGoals = [
                 { title: 'Emergency Fund', target: 0, current: 0 },
                 { title: 'Debt Payoff', target: 0, current: 0 }
             ];
-            
+
             defaultGoals.forEach(goal => {
                 const newGoal = document.createElement('div');
                 newGoal.className = 'goal-card';
@@ -1537,18 +1552,18 @@
                     <div class="goal-percentage">0% Complete</div>
                     <button class="btn-secondary delete-row" style="margin-top: 10px;">Remove</button>
                 `;
-                
+
                 goalsContainer.insertBefore(newGoal, addButton);
-                
+
                 // Add event listeners
                 const targetInput = newGoal.querySelector('.goal-target');
                 const currentInput = newGoal.querySelector('.goal-current');
-                
+
                 targetInput.addEventListener('input', updateGoalsProgress);
                 currentInput.addEventListener('input', updateGoalsProgress);
-                
+
                 const deleteBtn = newGoal.querySelector('.delete-row');
-                deleteBtn.addEventListener('click', function() {
+                deleteBtn.addEventListener('click', function () {
                     if (confirm('Are you sure you want to remove this goal?')) {
                         newGoal.remove();
                         updateGoalsProgress();
@@ -1556,15 +1571,15 @@
                 });
             });
         }
-        
+
         function collectIncomeData() {
             const incomeData = [];
-            
+
             document.querySelectorAll('#income-table tr:not(.total-row)').forEach(row => {
                 const sourceInput = row.querySelector('.income-source');
                 const expectedInput = row.querySelector('.income-expected');
                 const actualInput = row.querySelector('.income-actual');
-                
+
                 if (sourceInput && expectedInput && actualInput) {
                     incomeData.push({
                         source: sourceInput.value,
@@ -1573,18 +1588,18 @@
                     });
                 }
             });
-            
+
             return incomeData;
         }
-        
+
         function collectEssentialExpensesData() {
             const expensesData = [];
-            
+
             document.querySelectorAll('#essentials-table tr:not(.total-row)').forEach(row => {
                 const categoryInput = row.querySelector('.expense-category');
                 const budgetedInput = row.querySelector('.expense-budgeted');
                 const actualInput = row.querySelector('.expense-actual');
-                
+
                 if (categoryInput && budgetedInput && actualInput) {
                     expensesData.push({
                         category: categoryInput.value,
@@ -1593,18 +1608,18 @@
                     });
                 }
             });
-            
+
             return expensesData;
         }
-        
+
         function collectDiscretionaryExpensesData() {
             const expensesData = [];
-            
+
             document.querySelectorAll('#discretionary-table tr:not(.total-row)').forEach(row => {
                 const categoryInput = row.querySelector('.expense-category');
                 const budgetedInput = row.querySelector('.expense-budgeted');
                 const actualInput = row.querySelector('.expense-actual');
-                
+
                 if (categoryInput && budgetedInput && actualInput) {
                     expensesData.push({
                         category: categoryInput.value,
@@ -1613,18 +1628,18 @@
                     });
                 }
             });
-            
+
             return expensesData;
         }
-        
+
         function collectSavingsData() {
             const savingsData = [];
-            
+
             document.querySelectorAll('#savings-table tr:not(.total-row)').forEach(row => {
                 const categoryInput = row.querySelector('.savings-category');
                 const budgetedInput = row.querySelector('.savings-budgeted');
                 const actualInput = row.querySelector('.savings-actual');
-                
+
                 if (categoryInput && budgetedInput && actualInput) {
                     savingsData.push({
                         category: categoryInput.value,
@@ -1633,19 +1648,19 @@
                     });
                 }
             });
-            
+
             return savingsData;
         }
-        
+
         function collectGoalsData() {
             const goalsData = [];
-            
+
             document.querySelectorAll('.goal-card').forEach(card => {
                 if (!card.classList.contains('add-goal-btn')) {
                     const titleElement = card.querySelector('h4');
                     const targetInput = card.querySelector('.goal-target');
                     const currentInput = card.querySelector('.goal-current');
-                    
+
                     if (titleElement && targetInput && currentInput) {
                         goalsData.push({
                             title: titleElement.textContent,
@@ -1655,26 +1670,26 @@
                     }
                 }
             });
-            
+
             return goalsData;
         }
-        
+
         function loadIncomeData(incomeData) {
             // First reset the table
             resetTableRows('#income-table', 0, addIncomeRow);
-            
+
             if (!incomeData || incomeData.length === 0) {
                 // Add default rows if no data
                 addIncomeRow();
                 addIncomeRow();
                 return;
             }
-            
+
             // Add rows for each income item
             incomeData.forEach(income => {
                 const tbody = document.querySelector('#income-table tbody');
                 const totalRow = tbody.querySelector('.total-row');
-                
+
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
                     <td><input type="text" class="income-source" placeholder="Income Source" value="${income.source || ''}"></td>
@@ -1683,20 +1698,20 @@
                     <td class="income-difference">$0.00</td>
                     <td><button class="btn-secondary delete-row">X</button></td>
                 `;
-                
+
                 tbody.insertBefore(newRow, totalRow);
                 addRowCalculationListeners(newRow);
                 addDeleteButtonListener(newRow.querySelector('.delete-row'));
                 calculateIncomeDifference(newRow);
             });
-            
+
             calculateIncomeTotals();
         }
-        
+
         function loadEssentialExpensesData(expensesData) {
             // First reset the table
             resetTableRows('#essentials-table', 0, addEssentialRow);
-            
+
             if (!expensesData || expensesData.length === 0) {
                 // Add default rows if no data
                 addEssentialRow();
@@ -1704,12 +1719,12 @@
                 addEssentialRow();
                 return;
             }
-            
+
             // Add rows for each expense item
             expensesData.forEach(expense => {
                 const tbody = document.querySelector('#essentials-table tbody');
                 const totalRow = tbody.querySelector('.total-row');
-                
+
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
                     <td><input type="text" class="expense-category" placeholder="Expense Category" value="${expense.category || ''}"></td>
@@ -1718,20 +1733,20 @@
                     <td class="expense-difference">$0.00</td>
                     <td><button class="btn-secondary delete-row">X</button></td>
                 `;
-                
+
                 tbody.insertBefore(newRow, totalRow);
                 addRowCalculationListeners(newRow);
                 addDeleteButtonListener(newRow.querySelector('.delete-row'));
                 calculateExpenseDifference(newRow);
             });
-            
+
             calculateEssentialsTotals();
         }
-        
+
         function loadDiscretionaryExpensesData(expensesData) {
             // First reset the table
             resetTableRows('#discretionary-table', 0, addDiscretionaryRow);
-            
+
             if (!expensesData || expensesData.length === 0) {
                 // Add default rows if no data
                 addDiscretionaryRow();
@@ -1739,12 +1754,12 @@
                 addDiscretionaryRow();
                 return;
             }
-            
+
             // Add rows for each expense item
             expensesData.forEach(expense => {
                 const tbody = document.querySelector('#discretionary-table tbody');
                 const totalRow = tbody.querySelector('.total-row');
-                
+
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
                     <td><input type="text" class="expense-category" placeholder="Expense Category" value="${expense.category || ''}"></td>
@@ -1753,32 +1768,32 @@
                     <td class="expense-difference">$0.00</td>
                     <td><button class="btn-secondary delete-row">X</button></td>
                 `;
-                
+
                 tbody.insertBefore(newRow, totalRow);
                 addRowCalculationListeners(newRow);
                 addDeleteButtonListener(newRow.querySelector('.delete-row'));
                 calculateExpenseDifference(newRow);
             });
-            
+
             calculateDiscretionaryTotals();
         }
-        
+
         function loadSavingsData(savingsData) {
             // First reset the table
             resetTableRows('#savings-table', 0, addSavingsRow);
-            
+
             if (!savingsData || savingsData.length === 0) {
                 // Add default rows if no data
                 addSavingsRow();
                 addSavingsRow();
                 return;
             }
-            
+
             // Add rows for each savings item
             savingsData.forEach(saving => {
                 const tbody = document.querySelector('#savings-table tbody');
                 const totalRow = tbody.querySelector('.total-row');
-                
+
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
                     <td><input type="text" class="savings-category" placeholder="Savings Category" value="${saving.category || ''}"></td>
@@ -1787,31 +1802,31 @@
                     <td class="savings-difference">$0.00</td>
                     <td><button class="btn-secondary delete-row">X</button></td>
                 `;
-                
+
                 tbody.insertBefore(newRow, totalRow);
                 addRowCalculationListeners(newRow);
                 addDeleteButtonListener(newRow.querySelector('.delete-row'));
                 calculateSavingsDifference(newRow);
             });
-            
+
             calculateSavingsTotals();
         }
-        
+
         function loadGoalsData(goalsData) {
             // First reset goals
             resetGoals();
-            
+
             if (!goalsData || goalsData.length === 0) {
                 // Default goals already added by resetGoals
                 return;
             }
-            
+
             // Remove default goals
             const goalsContainer = document.getElementById('goals-container');
             goalsContainer.querySelectorAll('.goal-card').forEach(card => card.remove());
-            
+
             const addButton = document.getElementById('add-goal');
-            
+
             // Add saved goals
             goalsData.forEach(goal => {
                 const newGoal = document.createElement('div');
@@ -1832,37 +1847,37 @@
                     <div class="goal-percentage">0% Complete</div>
                     <button class="btn-secondary delete-row" style="margin-top: 10px;">Remove</button>
                 `;
-                
+
                 goalsContainer.insertBefore(newGoal, addButton);
-                
+
                 // Add event listeners
                 const targetInput = newGoal.querySelector('.goal-target');
                 const currentInput = newGoal.querySelector('.goal-current');
-                
+
                 targetInput.addEventListener('input', updateGoalsProgress);
                 currentInput.addEventListener('input', updateGoalsProgress);
-                
+
                 const deleteBtn = newGoal.querySelector('.delete-row');
-                deleteBtn.addEventListener('click', function() {
+                deleteBtn.addEventListener('click', function () {
                     if (confirm('Are you sure you want to remove this goal?')) {
                         newGoal.remove();
                         updateGoalsProgress();
                     }
                 });
             });
-            
+
             updateGoalsProgress();
         }
-        
+
         // Helper functions
         function formatCurrency(amount) {
             return `${amount.toFixed(2)}`;
         }
-        
+
         function formatPercentage(percentage) {
             return `${Math.round(percentage)}%`;
         }
     </script>
 </body>
+
 </html>
-        }
